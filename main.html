@@ -1,0 +1,827 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+
+    <title>Thambili Travels | Welcome</title>
+    <link rel="icon" href="imgs/thamibli logo.png">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jQuery/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="jQuery/jQuery.js"></script>
+    <!-- <script src="jQuery/jquery-ui-1.9.0.custom.min.js"></script> -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com"> -->
+</head>
+
+<body>
+    <!-- header section -->
+    <section class="header">
+        <div class="back">
+            <div class="container">
+                <h1>Travel Across The Globe</h1>
+                <p>With Thambili Travels</p>
+                <a href="main.html"><img src="imgs/thamibli logo full.png" alt="Agency logo"></a>
+            </div>
+        </div>
+
+    </section>
+    <!-- search boxes for sorting -->
+    <section class="features">
+        <div class="container">
+            <div class="row">
+
+                <!-- destination search -->
+                <div class="col-md-4">
+                    <h3>Destination:</h3>
+                    <select name="destination" id="destination">
+                        <option value="The Alps">The Alps</option>
+                        <option value="Caribbean">Caribbean</option>
+                        <option value="Indian Ocean">Indian Ocean</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Africa">Africa</option>
+                        <option value="North and Central America">North and Central America</option>
+                        <option value="South America">South America</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Any" selected>Any</option>
+                    </select>
+                </div>
+
+                <!-- comfort level -->
+                <div class="col-md-4">
+                    <h3>Comfort Level:</h3>
+                    <select name="comfort-level" id="comfort-level">
+                        <option value="Comfort 3 stars">Comfort 3 stars</option>
+                        <option value="Premium 4 stars">Premium 4 stars</option>
+                        <option value="Luxury 5 stars">Luxury 5 stars</option>
+                        <option value="Any" selected>Any</option>
+                    </select>
+                </div>
+
+                <!-- available -->
+                <div class="col-md-4">
+                    <div class="Time">
+                        <h3>Availability: </h3>
+                        <select name="time" id="time">
+                            <option value="January" , "Feburary" , "March" , "April"> January - April (2014)</option>
+                            <option value="May" , "June" , "July" , "August">May - August (2014)</option>
+                            <option value="September" , "October" , "November" , "December">September - December (2014)
+                            </option>
+                            <option value="Anytime" selected>Anytime</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <p class="box">
+                        <h3>Price Range</h3>
+                        <input type="text" id="amount" readonly class="goldSliderText">
+                    </p>
+                    <div id="slider-range"></div>
+
+                    <br><br>
+                </div>
+
+                <div class="col-md-4">
+                    <button id="Search" class="search_class">Search</button>
+                </div>
+
+                <!-- activity -->
+                <div class="col-md-4">
+                    <h3>Activities:</h3>
+                    <select name="activities" id="activities">
+                        <option value="Water Skiing">Water Sking</option>
+                        <option value="Tennis">Tennis</option>
+                        <option value="Scuba Diving">Scuba Diving</option>
+                        <option value="Spa">Spa</option>
+                        <option value="kids club">Kids Club</option>
+                        <option value="Golf">Golf</option>
+                        <option value="Sailing">Sailing</option>
+                        <option value="Any" selected>Any</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- selected resorts -->
+    <section class="features">
+        <h1>Selected Resorts</h1>
+        <div class="container">
+            <div class="row"></div>
+
+            <div id="Placeholder"></div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section class="features">
+        <h1>Featured Resorts</h1>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <!-- 1st row image -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="imgs/caribbean_hotel_1/1.jpg" alt="">
+                            <div class="price">
+                                <p>1254</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <!-- <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i> -->
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <a href="resort1.html">
+                                <h4>Les Boucaniers - Caribbean</h4>
+                            </a>
+                            <p>The Alps are the highest and most extensive mountain range system that lies entirely in
+                                Europe, and stretching approximately 1,200 kilometres across eight Alpine countries:
+                                France, Switzerland, Monaco, Italy, Liechtenstein, Austria, Germany, and Slovenia.</p>
+                            <div>
+                                <span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"> Martinique</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- 2nd row image -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="imgs/indian-ocean/1.jpg" alt="">
+                            <div class="price">
+                                <p>2062</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <!-- <i class="fa fa-star-half-o" aria-hidden="true"></i>-->
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <a href="resort2.html">
+                                <h4>La Plantation d'Albion - Indian Ocean</h4>
+                            </a>
+                            <p>Beautifully located in one of the last remote creeks on the island, La Plantation
+                                d'Albion Club Med welcomes the most demanding of guests into a world of supreme
+                                refinement.</p>
+                            <div>
+                                <span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"> Mauritius</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- 3rd row image -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="imgs/europe-1/1.jpg" alt="">
+                            <div class="price">
+                                <p>3000</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <!-- <i class="fa fa-star-half-o" aria-hidden="true"></i>-->
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <a href="resort3.html">
+                                <h4>Bodrum Palmiye - Europe</h4>
+                            </a>
+                            <p>Sat on a protected peninsula, perched above the crystal-clear waters of the Aegean sea,
+                                Club Med Bodrum Palmiye is a secluded jewel glistening under the Turkish sun.</p>
+                            <div>
+                                <span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"> Turkey</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- 4th row image -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="imgs/africa/1.jpg" alt="">
+                            <div class="price">
+                                <p>4200</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <!-- <i class="fa fa-star-half-o" aria-hidden="true"></i>-->
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <a href="resort4.html">
+                                <h4>Agadir - Africa</h4>
+                            </a>
+                            <p>A stone’s throw from the illuminated beaches, relax as you take in the Atlantic Ocean at
+                                Club Med Agadir.</p>
+                            <div>
+                                <span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"> Morocco</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- 5th row image -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="imgs/america/1.jpg" alt="">
+                            <div class="price">
+                                <p>2000</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <!-- <i class="fa fa-star-o" aria-hidden="true"></i> -->
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <a href="resort5.html">
+                                <h4>Sandpiper Bay - North and Central America</h4>
+                            </a>
+                            <p>Tucked along the St. Lucie River between Miami and Orlando, Club Med Sandpiper Bay is
+                                perfect for sports retreats and relaxing breaks between visits to Florida’s famous theme
+                                parks and cities.</p>
+                            <div>
+                                <span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"> UNITED-STATES</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- 6th row image -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="imgs/south-america/1.jpg" alt="">
+                            <div class="price">
+                                <p>1950</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <a href="resort6.html">
+                                <h4>Punta Cana - South America</h4>
+                            </a>
+                            <p>In a coconut grove where the Caribbean Sea meets the Atlantic Ocean, lies a colourful
+                                island paradise full of fun-filled adventures.</p>
+                            <div>
+                                <span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"> DOMINICAN REPUBLIC</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4"></div>
+
+                <div class="col-md-4">
+                    <!-- 7th row image -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="imgs/asia/1.jpg" alt="">
+                            <div class="price">
+                                <p>3900</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <a href="resort7.html">
+                                <h4 class="text-info">Sanya - Asia</h4>
+                            </a>
+                            <p>On the southern tip of Hainan Island, the “Hawaii of the Orient”, Club Med Sanya is a
+                                tropical paradise of golden sunshine, turquoise waters and verdant nature. This
+                                all-inclusive family resort in China has something for everyone.</p>
+                            <div>
+                                <span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"> CHINA</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- drag and drop -->
+    <div class="container1">
+        <section id="header1" style="margin-bottom: 50px;">
+            <h3>Drag your favourite resort here. </h3>
+        </section>
+
+        <section id="product">
+            <ul class="clear">
+                <li data-id="1">
+                    <a href="#">
+                        <img src="imgs/caribbean_hotel_1/1.jpg" width="140px" height="90px" alt="">
+                        <a href="resort1.html"></a>
+                        <h5>Les Boucaniers</h5>
+                        <p>Price: 1254</p>
+                    </a>
+                </li>
+                <li data-id="2">
+                    <a href="#">
+                        <img src="imgs/indian-ocean/1.jpg" width="140px" height="90px" alt="">
+                        <a href="resort2.html"></a>
+                        <h5>La Plantation</h5>
+                        <p>Price: 2062 </p>
+                    </a>
+                </li>
+                <li data-id="3">
+                    <a href="#">
+                        <img src="imgs/europe-1/1.jpg" width="140px" height="90px" alt="">
+                        <a href="resort3.html">
+                            <h5>Bodrum</h5>
+                        </a>
+                        <p>Price: 3000 </p>
+                    </a>
+                </li>
+                <li data-id="4">
+                    <a href="#">
+                        <img src="imgs/africa/1.jpg" alt="" width="140px" height="90px">
+                        <a href="resort4.html">
+                            <h5>Agadir</h5>
+                        </a>
+                        <p>4200</p>
+                    </a>
+                </li>
+                <li data-id="5">
+                    <a href="#">
+                        <img src="imgs/america/1.jpg" width="140px" height="90px" alt="">
+                        <a href="resort5.html">
+                            <h5>Sandpiper Bay</h5>
+                        </a>
+                        <p>2000</p>
+                    </a>
+                </li>
+                <li data-id="6">
+                    <a href="#">
+                        <img src="imgs/south-america/1.jpg" width="140px" height="90px" alt="">
+                        <a href="resort6.html">
+                            <h5>Punta Cana</h5>
+                        </a>
+                        <p>1950</p>
+                    </a>
+                </li>
+                <li data-id="7">
+                    <a href="#">
+                        <img src="imgs/asia/1.jpg" width="140px" height="90px" alt="">
+                        <a href="resort7.html">
+                            <h5>Sanya</h5>
+                        </a>
+                        <p>3900</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- drop and drag bucket -->
+        <aside id="sidebar">
+            <div class="basket">
+                <div class="basket_list">
+                    <div class="head">
+                        <span class="name">Favourite Resorts</span>
+                        <span class="count"></span>
+                    </div>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+
+    <script>
+        $(function () {
+            $("#product li").draggable({
+
+                revert: true,
+
+                // once the dragging starts, we decrease the opacity of other items
+                // Appending a class as we do that with CSS
+                drag: function () {
+                    $(this).addClass("active");
+                    $(this).closest("#product").addClass("active");
+                },
+
+                // removing the CSS classes once dragging is over.
+                stop: function () {
+                    $(this).removeClass("active").closest("#product").removeClass("active");
+                }
+            });
+
+            $(".basket").droppable({
+
+
+                activeClass: "active",
+
+                // The class that will be appended once we are hovering the to-be-dropped-element (basket)
+                hoverClass: "hover",
+
+                // The acceptance of the item once it touches the to-be-dropped-element basket
+                // For different values http://api.jqueryui.com/droppable/#option-tolerance
+                tolerance: "touch",
+                drop: function (event, ui) {
+
+                    var basket = $(this),
+                        move = ui.draggable,
+                        itemId = basket.find("ul li[data-id='" + move.attr("data-id") + "']");
+
+                    // To increase the value by +1 if the same item is already in the basket
+                    if (itemId.html() != null) {
+                        itemId.find("input").val(parseInt(itemId.find("input").val()) + 1);
+                    }
+                    else {
+                        // Add the dragged item to the basket
+                        addBasket(basket, move);
+
+                        // Updating the quantity by +1" rather than adding it to the basket
+                        move.find("input").val(parseInt(move.find("input").val()) + 1);
+                    }
+                }
+            });
+
+            // This function runs onc ean item is added to the basket
+            function addBasket(basket, move) {
+                basket.find("ul").append('<li data-id="' + move.attr("data-id") + '">'
+                    + '<span class="name">' + move.find("h5").html() + '</span>'
+                    + '<input class="count" value="1" type="text">'
+                    + '<button class="delete">&#10005;</button>');
+            }
+
+            // The function that is triggered once delete button is pressed
+            $(".basket ul li button.delete").live("click", function () {
+                $(this).closest("li").remove();
+            });
+
+        });
+    </script>
+
+    <!-- banner -->
+    <section class="banner">
+        <div class="banner-highlights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="imgs/caribbean_hotel_1/3.jpg" alt="">
+                            <h4>Caribbean</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="imgs/indianOcean.jpg" alt="">
+                            <h4>Indoan Ocean</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="imgs/southamerica.jpg" alt="">
+                            <h4>South America</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="imgs/europe.jpg" alt="">
+                            <h4>Europe</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="imgs/cantral america.jpg" alt="">
+                            <h4>Central America</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="imgs/asia.jpg" alt="">
+                            <h4>Asia</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="imgs/africa.jpg" alt="">
+                            <h4>Africa</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="imgs/theAlphs.jpg" alt="">
+                            <h4>The Alphs</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- users review -->
+    <section class="users-feedback">
+        <h1>Users Review</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p style="text-align: justify;">****Very good service & 100% worth what paid for******
+
+                            Based on their very positive Facebook reviews, me and my wife booked a 6-day tour to Bali.
+
+                            Thambili travels has an excellent service for their customers and their response manner is
+                            admirable. Easily 5-stars. Special thanks should goes Ms. Charishka De Silva, who handled
+                            our tour. For your requirement and itinerary she'll provide you the best on behalf Thambili
+                            Travels. I had a problem while checking in to a hotel in Kuta and time to time she contacted
+                            me to get the updates after informing her the matter. My emails were promptly responded to,
+                            and everyone showed up when they were supposed to. Hotel-hotel and airport-hotel transports
+                            was done by Red Apple Travels which coordinated by Thambili Travels and we had a wonderful
+                            ride in a comfortable Toyota Avanza which allocated for us. The driver was also very happy
+                            to serve us with his best.
+
+                            Thank you Thambili Travels, Ms. Charishka for your support and surely will contact you soon.
+
+                            Thank you & Cheers!!!!! </p>
+                        <h5>Nuwan Gunawardana</h5>
+                        <small>Sri Lanka</small>
+                    </div>
+                    <img src="images/nuwan.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p style="text-align: justify;">This was the best trip I've ever taken and it had everything to
+                            do with using this travel company and this agent to plan our trip. Everything from the
+                            initial trip planning process to the actual trip itself was seamless and made for an
+                            unforgettable experience.
+                            During the planning process, we were provided many options and recommendations to plan a
+                            trip best suited to our travel style. Our travel agent responded to all emails and phone
+                            calls quickly. She is a true pleasure to work with. She really cares for her clients, and I
+                            hope we get to travel to anywhere we can use her services again. </p>
+                        <h5>Lahi Fernando</h5>
+                        <small>Sri Lanka</small>
+                    </div>
+                    <img src="images/lahu.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p style="text-align: justify;">The best. 😇
+
+                            They provided the package which I wanted, but the price was very affordable🤩 . They
+                            provided many options for airlines and helped step by step to get the visa☺️.
+                            Transportation in Malaysia also very promptly done. Special thanks to Ms. Chariska De Silva
+                            who did an amazing job to arrange our tour to Malaysia. In every step she guided us🙂, even
+                            on the Malaysia she reminded us on our next step.
+                            Thanks THAMBILI TRAVELS.👍 </p>
+                        <h5>Tharindu Weerarathne</h5>
+                        <small>Sri Lanka</small>
+                    </div>
+                    <img src="images/tharindu.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1> <img src="imgs/thamibli logo crop.png" alt="" class="footer-logo"></h1>
+                    <p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Features</h4>
+                    <p>Deals & Offers</p>
+                    <p>CustomerReviews</p>
+                    <p>Cancellation Policy</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Quick Contact</h4>
+                    <p><i class="fa fa-phone-square" aria-hidden="true"></i>+94 76 794 0118</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i>thamibliisland@gmail.com</p>
+                    <p><i class="fa fa-home" aria-hidden="true"></i>3/2, Kidagammulla, Gampaha. Sri Lanka</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us on</h4>
+                    <p><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</p>
+                    <p><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</p>
+                    <p><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa fa-copyright" aria-hidden="true"></i> By Thambili Island</p>
+        </div>
+    </section>
+
+    <!-- jSon File -->
+    <script>
+        var data = {
+            "resorts": [
+                {
+                    "id": "resort1",
+                    "destination": "Caribbean",
+                    "name": "Les Boucaniers",
+                    "location": "Martinique",
+                    "comfortLevel": "Luxury 5 stars",
+                    "activities": [
+                        "water skiing",
+                        "tennis",
+                        "scuba diving",
+                        "spa"
+                    ],
+                    "price": 1254,
+                    "startDate": "2017-05-05",
+                    "endDate": "2019-12-31",
+                    "short_description": "The resort of Les Boucaniers is located on the laid-back beach-covered south coast of the island, and is perfectly placed for Martinique holidays that are both relaxing and awe-inspiring.",
+                    "picture": "imgs/caribbean_hotel_1/1.jpg",
+                    "long_description": "A divers' paradise in the Baie du Marin, a legendary spot.<br>Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+                    "url": "resort1.html"
+                },
+
+                {
+                    "id": "resort2",
+                    "destination": "Indian Ocean",
+                    "name": "La Plantation d'Albion",
+                    "location": "Mauritius",
+                    "comfortLevel": "Premium 4 stars",
+                    "activities": [
+                        "kids club",
+                        "golf",
+                        "scuba diving",
+                        "tennis",
+                        "sailing",
+                        "spa"
+                    ],
+                    "price": 2062,
+                    "startDate": "2017-01-01",
+                    "endDate": "2019-12-31",
+                    "short_description": "Beautifully located in one of the last remote creeks on the island, La Plantation d'Albion Club Med welcomes the most demanding of guests into a world of supreme refinement.",
+                    "picture": "imgs/indian-ocean/1.jpg",
+                    "long_description": "In a remote beauty spot, savour the luxury of Mauritian lifestyle. <br> The idyllic natural setting is enhanced by the sublime decor designed by Marc Hertrich and Nicolas Adnet, and the Resort's top-end comfort is perfectly reflected in its beautifully spacious rooms. The exceptional CINQ MONDES Spa* and luxurious overflow pool add an ideally Zen touch.<br> The Resort is entirely devoted to fulfilling its guests' desires and offers discreet, personal service in its swimming areas, bars and 'Table Gourmet' restaurants.",
+                    "url": "resort2.html"
+                },
+
+                {
+                    "id": "resort3",
+                    "destination": "Europe",
+                    "name": "Bodrum Palmiye",
+                    "location": "TURKEY",
+                    "comfortLevel": "Comfort 3 stars",
+                    "activities": [
+                        "tennis",
+                        "spa",
+                        "golf"
+                    ],
+                    "price": 3000,
+                    "startDate": "2017-05-05",
+                    "endDate": "2019-12-31",
+                    "short_description": "Sat on a protected peninsula, perched above the crystal-clear waters of the Aegean sea, Club Med Bodrum Palmiye is a secluded jewel glistening under the Turkish sun. ",
+                    "picture": "imgs/europe-1/1.jpg",
+                    "long_description": "A divers' paradise in the Baie du Marin, a legendary spot.<br>Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+                    "url": "resort3.html"
+                },
+
+                {
+                    "id": "resort4",
+                    "destination": "Africa",
+                    "name": "Agadir",
+                    "location": "MOROCCO",
+                    "comfortLevel": "Premium 4 stars",
+                    "activities": [
+                        "tennis",
+                        "spa",
+                        "golf",
+                        "scuba Diving"
+                    ],
+                    "price": 4200,
+                    "startDate": "2017-05-05",
+                    "endDate": "2019-12-31",
+                    "short_description": "A stone’s throw from the illuminated beaches, relax as you take in the Atlantic Ocean at Club Med Agadir.",
+                    "picture": "imgs/africa/1.jpg",
+                    "long_description": "A divers' paradise in the Baie du Marin, a legendary spot.<br>Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+                    "url": "resort4.html"
+                },
+
+                {
+                    "id": "resort5",
+                    "destination": "North and Central America",
+                    "name": "Sandpiper Bay",
+                    "location": "UNITED-STATES",
+                    "comfortLevel": "Luxury 5 stars",
+                    "activities": [
+                        "tennis",
+                        "spa",
+                        "golf",
+                        "kids club"
+                    ],
+                    "price": 2000,
+                    "startDate": "2017-05-05",
+                    "endDate": "2019-12-31",
+                    "short_description": "Tucked along the St. Lucie River between Miami and Orlando, Club Med Sandpiper Bay is perfect for sports retreats and relaxing breaks between visits to Florida’s famous theme parks and cities.",
+                    "picture": "imgs/america/1.jpg",
+                    "long_description": "A divers' paradise in the Baie du Marin, a legendary spot.<br>Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+                    "url": "resort5.html"
+                },
+
+                {
+                    "id": "resort6",
+                    "destination": "South America",
+                    "name": "Punta Cana",
+                    "location": "DOMINICAN REPUBLIC",
+                    "comfortLevel": "Comfort 3 stars",
+                    "activities": [
+                        "tennis",
+                        "spa",
+                        "golf",
+                        "scuba diving"
+                    ],
+                    "price": 1950,
+                    "startDate": "2017-05-05",
+                    "endDate": "2019-12-31",
+                    "short_description": "In a coconut grove where the Caribbean Sea meets the Atlantic Ocean, lies a colourful island paradise full of fun-filled adventures.",
+                    "picture": "imgs/south-america/1.jpg",
+                    "long_description": "A divers' paradise in the Baie du Marin, a legendary spot.<br>Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+                    "url": "resort6.html"
+                },
+
+                {
+                    "id": "resort7",
+                    "destination": "Asia",
+                    "name": "Sanya",
+                    "location": "CHINA",
+                    "comfortLevel": "Luxury 5 stars",
+                    "activities": [
+                        "tennis",
+                        "spa",
+                        "golf",
+                        "water skiing"
+                    ],
+                    "price": 3900,
+                    "startDate": "2017-05-05",
+                    "endDate": "2019-12-31",
+                    "short_description": "On the southern tip of Hainan Island, the “Hawaii of the Orient”, Club Med Sanya is a tropical paradise of golden sunshine, turquoise waters and verdant nature. This all-inclusive family resort in China has something for everyone.",
+                    "picture": "imgs/asia/1.jpg",
+                    "long_description": "A divers' paradise in the Baie du Marin, a legendary spot.<br>Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+                    "url": "resort7.html"
+                },
+
+            ]
+        }
+    </script>
+</body>
+
+</html>
